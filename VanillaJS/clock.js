@@ -6,13 +6,19 @@ function getClock() {
   const years = String(date.getFullYear());
   const months = String(date.getMonth() + 1).padStart(2, "0");
   const days = String(date.getDay() + 1).padStart(2, "0");
-  let amPm = "오전";
+  let amPm = "";
+  let hours = 0;
   if (date.getHours < 12) {
-    let amPm = "오전";
+    amPm = "오전";
+    hours = String(date.getHours());
   } else {
-    let amPm = "오후";
+    amPm = "오후";
+    if (date.getHours === 12) {
+      hours = String(date.getHours());
+    } else {
+      hours = String(date.getHours() - 12);
+    }
   }
-  const hours = String(date.getHours());
   const minutes = String(date.getMinutes()).padStart(2, "0");
   nowTime.innerText = `${amPm} ${hours}:${minutes}`;
   nowDay.innerText = `${years}-${months}-${days}`;

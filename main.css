@@ -4,6 +4,7 @@
 body {
   width: 100vh;
   height: 100vh;
+  cursor: default;
 }
 
 .chosenOne {
@@ -44,6 +45,7 @@ body {
   height: 40px;
   display: flex;
   align-items: center;
+  color: rgb(73, 73, 73);
 }
 
 .footer-ui__icons > span {
@@ -53,7 +55,13 @@ body {
 }
 
 .footer-ui__icons > span:hover {
-  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.footer-ui__time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer-ui__time p {
