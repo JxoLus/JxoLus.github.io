@@ -4,5 +4,40 @@
 
 .footer-ui {
   width: 100%;
-  background-color: blue;
+  background-color: rgba(211, 213, 223, 0.4);
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.footer-ui span {
+  background-color: #edeef2;
+  padding: 11.7px 15px;
+}
+
+.footer-ui span:hover {
+  background-color: white;
+}
+
+.usedNow {
+  border-bottom: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+/* *main* */
+
+.main-tabs {
+  display: flex;
+}
+
+.main-tabs__windows {
+  position: fixed;
+  bottom: 70px;
+  background-color: #edeef2;
 }
