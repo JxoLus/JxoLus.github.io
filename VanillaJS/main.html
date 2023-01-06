@@ -17,19 +17,22 @@
     </main>
     <footer>
       <div class="footer-ui">
-        <span class="footer-ui__windows">
-          <i class="fa-brands fa-windows fa-lg"></i>
-        </span>
-        <span class="footer-ui__clock">
-          <i class="fa-solid fa-clock fa-lg"></i>
-        </span>
-        <span class="footer-ui__todo usedNow">
-          <i class="fa-solid fa-check fa-lg"></i>
-        </span>
-        <span class="footer-ui__time">
-          <p>0000-00-00</p>
+        <div class="footer-ui__icons">
+          <span class="footer-ui__windows">
+            <i class="fa-brands fa-windows fa-lg"></i>
+          </span>
+          <span class="footer-ui__clock">
+            <i class="fa-solid fa-clock fa-lg"></i>
+          </span>
+          <span class="footer-ui__todo usedNow">
+            <i class="fa-solid fa-check fa-lg"></i>
+          </span>
+        </div>
+        <div class="footer-ui__time">
+          <p id="nowTime">오전 0:00</p>
+          <p id="nowDay">0000-00-00</p>
           <script src="clock.js"></script>
-        </span>
+        </div>
       </div>
     </footer>
     <script

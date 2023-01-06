@@ -1,4 +1,5 @@
-const time = document.querySelector(".footer-ui__time p");
+const nowTime = document.querySelector("#nowTime");
+const nowDay = document.querySelector("#nowDay");
 
 function getClock() {
   const date = new Date();
@@ -12,9 +13,9 @@ function getClock() {
     let amPm = "오후";
   }
   const hours = String(date.getHours());
-  // TODO: 시는 일의 자리 수 일때 앞에 0 안 붙는거 확인, 분도 확인할 것.
   const minutes = String(date.getMinutes()).padStart(2, "0");
-  time.innerText = `${amPm} ${hours}:${minutes} ${years}-${months}-${days}`;
+  nowTime.innerText = `${amPm} ${hours}:${minutes}`;
+  nowDay.innerText = `${years}-${months}-${days}`;
   console.log(`time: ${amPm} ${hours}:${minutes} ${years}-${months}-${days}`);
 }
 

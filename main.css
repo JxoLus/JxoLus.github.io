@@ -10,16 +10,28 @@
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: left;
 }
 
-.footer-ui span {
+.footer-ui__icons span {
   background-color: #edeef2;
-  padding: 11.7px 15px;
+  padding: 9.15px 15px;
 }
 
-.footer-ui span:hover {
+.footer-ui__icons span:hover {
   background-color: white;
+}
+
+.footer-ui__time p {
+  position: absolute;
+  right: 0;
+  bottom: -9px;
+  margin: 0px 15px 15px 0px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+#nowTime {
+  margin: 0px 19px 33px 0px;
 }
 
 .usedNow {
