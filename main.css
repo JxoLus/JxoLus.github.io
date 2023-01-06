@@ -1,10 +1,13 @@
 @import "reset.css";
 
 /* @import "VanillaJS/.css"; */
-
+body {
+  width: 100vh;
+  height: 100vh;
+}
 .footer-ui {
   width: 100%;
-  background-color: rgba(211, 213, 223, 0.4);
+  background-color: #f0ecec;
   position: fixed;
   bottom: 0;
   height: 40px;
@@ -13,12 +16,13 @@
 }
 
 .footer-ui__icons span {
-  background-color: #edeef2;
-  padding: 9.15px 15px;
+  background-color: #f0ecec;
+  padding: 9.15px 12px;
+  margin: 0px 3px 0px 0px;
 }
 
 .footer-ui__icons span:hover {
-  background-color: white;
+  background-color: #f8f4f4;
 }
 
 .footer-ui__time p {
