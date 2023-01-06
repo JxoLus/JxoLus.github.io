@@ -2,13 +2,41 @@
   display: flex;
 }
 
+.main-tabs div {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 .main-tabs__windows {
-  position: fixed;
-  bottom: 70px;
-  background-color: #edeef2;
+  bottom: 40px;
+  width: 250px;
+  height: 350px;
+}
+
+.main-tabs__clock {
+  width: 550px;
+  height: 250px;
+  top: 10px;
+  left: 10px;
+}
+
+.main-tabs__todo {
+  width: 350px;
+  height: 630px;
+  top: 10px;
+  right: 10px;
 }
 
 .main-tabs__fortune {
-  width: 300px;
-  height: 200px;
+  width: 700px;
+  height: 330px;
+  top: 285px;
+  right: 385px;
+}
+
+.main-tabs__weather {
+  width: 400px;
+  height: 225px;
+  top: 25px;
+  right: 385px;
 }
