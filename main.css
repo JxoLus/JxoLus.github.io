@@ -46,14 +46,14 @@ body {
   align-items: center;
 }
 
-.footer-ui__icons span {
+.footer-ui__icons > span {
   background-color: #f0ecec;
-  padding: 9.15px 12px;
-  margin: 0px 3px 0px 0px;
+  padding: 7px 10px 5.5px 10px;
+  margin: 1px 5px 1px 5px;
 }
 
-.footer-ui__icons span:hover {
-  background-color: #f8f4f4;
+.footer-ui__icons > span:hover {
+  background-color: rgb(255, 255, 255);
 }
 
 .footer-ui__time p {
@@ -70,7 +70,7 @@ body {
 }
 
 .usedNow {
-  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
 }
 
 .hidden {
