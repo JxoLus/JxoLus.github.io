@@ -19,8 +19,7 @@ function showTab(who) {
     if (windowsIsOpened == false) {
       windowsIsOpened = true;
       windowsTab.classList.remove("hidden");
-    }
-    if (windowsIsOpened == true) {
+    } else if (windowsIsOpened == true) {
       windowsIsOpened = false;
       windowsTab.classList.add("hidden");
     }
@@ -30,8 +29,7 @@ function showTab(who) {
     if (clockIsOpened == false) {
       clockIsOpened = true;
       clockTab.classList.remove("hidden");
-    }
-    if (clockIsOpened == true) {
+    } else if (clockIsOpened == true) {
       clockIsOpened = false;
       clockTab.classList.add("hidden");
     }
@@ -41,8 +39,7 @@ function showTab(who) {
     if (todoIsOpened == false) {
       todoIsOpened = true;
       todoTab.classList.remove("hidden");
-    }
-    if (todoIsOpened == true) {
+    } else if (todoIsOpened == true) {
       todoIsOpened = false;
       todoTab.classList.add("hidden");
     }
