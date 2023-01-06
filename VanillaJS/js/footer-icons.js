@@ -84,11 +84,19 @@ function allTabClose() {
     todoIsOpened = true;
     fortuneIsOpened = true;
     weatherIsOpened = true;
+    if (windowsIsOpened == true) {
+      windowsIsOpened = false;
+      windowsTab.classList.add("hidden");
+    }
     clockTab.classList.remove("hidden");
     todoTab.classList.remove("hidden");
     fortuneTab.classList.remove("hidden");
     weatherTab.classList.remove("hidden");
   } else {
+    if (windowsIsOpened == true) {
+      windowsIsOpened = false;
+      windowsTab.classList.add("hidden");
+    }
     if (clockIsOpened == true) {
       clockIsOpened = false;
       clockTab.classList.add("hidden");
