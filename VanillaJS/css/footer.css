@@ -27,11 +27,24 @@
 
 .footer-ui__time p {
   position: absolute;
-  right: 0;
+  right: 20px;
   bottom: -9px;
   margin: 0px 15px 15px 0px;
   font-size: 13px;
   font-weight: 500;
+}
+
+.footer-ui__all-close {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: 20px;
+  height: 40px;
+  background-color: rgba(92, 92, 92, 0.1);
+}
+
+.footer-ui__all-close:hover {
+  background-color: rgba(92, 92, 92, 0.3);
 }
 
 #nowTime {
@@ -39,5 +52,5 @@
 }
 
 .usedNow {
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid rgba(22, 22, 22, 0.5);
 }
