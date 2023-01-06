@@ -12,11 +12,11 @@ const todoTab = document.querySelector(".main-tabs__todo");
 const fortuneTab = document.querySelector(".main-tabs__fortune");
 const weatherTab = document.querySelector(".main-tabs__weather");
 
-let windowsIsOpened = true;
-let clockIsOpened = true;
-let todoIsOpened = true;
-let fortuneIsOpened = true;
-let weatherIsOpened = true;
+let windowsIsOpened = false;
+let clockIsOpened = false;
+let todoIsOpened = false;
+let fortuneIsOpened = false;
+let weatherIsOpened = false;
 
 function usedNow() {}
 

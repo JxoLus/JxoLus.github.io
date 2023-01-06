@@ -4,7 +4,7 @@
 
 .main-tabs div {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgb(235, 235, 235);
 }
 
 .main-tabs div:not(.main-tabs__windows) {
