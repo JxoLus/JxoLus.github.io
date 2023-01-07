@@ -3,6 +3,8 @@ const clock = document.querySelector(".footer-ui__clock");
 const todo = document.querySelector(".footer-ui__todo");
 const fortune = document.querySelector(".footer-ui__fortune");
 const weather = document.querySelector(".footer-ui__weather");
+const youtube = document.querySelector(".footer-ui__youtube");
+const time = document.querySelector(".footer-ui__time");
 
 const allClose = document.querySelector(".footer-ui__all-close");
 
@@ -79,7 +81,12 @@ function showTab(who) {
 }
 
 function allTabClose() {
-  if (clockIsOpened == false && todoIsOpened == false && fortuneIsOpened == false && weatherIsOpened == false) {
+  if (
+    clockIsOpened == false &&
+    todoIsOpened == false &&
+    fortuneIsOpened == false &&
+    weatherIsOpened == false
+  ) {
     clockIsOpened = true;
     todoIsOpened = true;
     fortuneIsOpened = true;
@@ -121,5 +128,10 @@ clock.addEventListener("click", () => showTab("clock"));
 todo.addEventListener("click", () => showTab("todo"));
 fortune.addEventListener("click", () => showTab("fortune"));
 weather.addEventListener("click", () => showTab("weather"));
+youtube.addEventListener(
+  "click",
+  () => (location.href = "https://youtube.com")
+);
+time.addEventListener("click", () => showTab("clock"));
 
 allClose.addEventListener("click", allTabClose);

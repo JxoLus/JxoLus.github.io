@@ -10,21 +10,11 @@
   <body>
     <main>
       <div class="main-tabs">
-        <div class="main-tabs__windows hidden">
-          windows
-        </div>
-        <div class="main-tabs__clock hidden">
-          clock
-        </div>
-        <div class="main-tabs__todo hidden">
-          todo
-        </div>
-        <div class="main-tabs__fortune hidden">
-          fortune
-        </div>
-        <div class="main-tabs__weather hidden">
-          weather
-        </div>
+        <div class="main-tabs__windows hidden">windows</div>
+        <div class="main-tabs__clock hidden">clock</div>
+        <div class="main-tabs__todo hidden">todo</div>
+        <div class="main-tabs__fortune hidden">fortune</div>
+        <div class="main-tabs__weather hidden">weather</div>
       </div>
     </main>
     <footer>
@@ -45,14 +35,16 @@
           <span class="footer-ui__weather">
             <i class="fa-solid fa-cloud"></i>
           </span>
+          <span class="footer-ui__youtube">
+            <i class="fa-brands fa-youtube fa-lg"></i>
+          </span>
         </div>
         <div class="footer-ui__time">
           <p id="nowTime">오전 0:00</p>
           <p id="nowDay">0000-00-00</p>
           <script src="../js/clock.js"></script>
         </div>
-        <div class="footer-ui__all-close">
-        </div>
+        <div class="footer-ui__all-close"></div>
       </div>
     </footer>
     <script
@@ -61,5 +53,6 @@
     ></script>
     <script src="../js/background.js"></script>
     <script src="../js/footer-icons.js"></script>
+    <script src="../js/drag.js"></script>
   </body>
 </html>

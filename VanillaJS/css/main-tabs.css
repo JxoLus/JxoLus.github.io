@@ -17,34 +17,34 @@
 
 .main-tabs__windows {
   bottom: 40px;
-  width: 250px;
-  height: 350px;
+  width: 15%;
+  height: 42%;
 }
 
 .main-tabs__clock {
-  width: 550px;
-  height: 250px;
-  top: 10px;
-  left: 10px;
+  width: 40%;
+  height: 45%;
+  top: 2%;
+  left: 0.5%;
 }
 
 .main-tabs__todo {
-  width: 350px;
-  height: 620px;
-  top: 10px;
-  right: 10px;
+  width: 25%;
+  height: 90%;
+  top: 2%;
+  left: 74%;
 }
 
 .main-tabs__fortune {
-  width: 700px;
-  height: 330px;
-  top: 300px;
-  right: 385px;
+  width: 55%;
+  height: 40%;
+  top: 52%;
+  left: 17%;
 }
 
 .main-tabs__weather {
-  width: 400px;
-  height: 250px;
-  top: 10px;
-  right: 385px;
+  width: 30%;
+  height: 45%;
+  top: 2%;
+  left: 42%;
 }

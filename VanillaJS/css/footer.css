@@ -6,7 +6,7 @@
   height: 40px;
   display: flex;
   align-items: center;
-  color: rgb(73, 73, 73);
+  color: rgb(100, 100, 100);
 }
 
 .footer-ui__icons > span {
@@ -53,4 +53,5 @@
 
 .usedNow {
   border-bottom: 2px solid rgba(22, 22, 22, 0.5);
+  color: black;
 }

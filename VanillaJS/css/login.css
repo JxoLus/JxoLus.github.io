@@ -6,7 +6,8 @@ input {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-html, body {
+html,
+body {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -16,12 +17,20 @@ html, body {
   position: relative;
 }
 
-p {
+.welcome {
   position: absolute;
-  top: 100px;
+  bottom: 175px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 50px;
+}
+
+.press-any-key {
+  position: absolute;
+  top: 125px;
   left: 45px;
   color: rgba(0, 0, 0, 0.5);
-  animation: pressAnyKeyAnimation 2s ease infinite;
+  font-size: 9px;
+  animation: pressAnyKeyAnimation 1s ease infinite;
 }
 
 @keyframes pressAnyKeyAnimation {
