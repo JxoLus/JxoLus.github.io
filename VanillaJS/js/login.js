@@ -13,12 +13,12 @@ function getPassword() {
   username = usernameInput.value;
   password = passwordInput.value;
   if (pakIsShowed === false) {
-    if (username.length >= 2 && password.length >=4) {
+    if (username.length >= 2 && password.length >= 4) {
       pressAnyKey.classList.remove("hidden");
       pakIsShowed = true;
     }
   } else if (pakIsShowed === true) {
-    if (username.length  < 2 || password.length < 4) {
+    if (username.length < 2 || password.length < 4) {
       pressAnyKey.classList.add("hidden");
       pakIsShowed = false;
     }
@@ -59,6 +59,4 @@ function login() {
 
 login();
 
-console.log(localStorage.getItem("username"))
 document.body.addEventListener("click", goToMainPage);
-
