@@ -18,61 +18,38 @@
 .main-tabs__windows {
   position: relative;
   bottom: 5vh;
-  width: 10vw;
-  height: 7%;
+  width: 2vw;
+  height: 7vh;
 }
 
 .fa-power-off {
-  left: 7%;
+  left: 0.5vw;
   position: absolute;
-  bottom: 25%;
+  bottom: 2vh;
 }
 
 .fa-image {
-  left: 7%;
+  left: 0.5vw;
   position: absolute;
-  bottom: 70%;
+  bottom: 5vh;
 }
 
 .main-tabs__clock {
-  width: 40%;
+  width: 20%;
   height: 10%;
   top: 2%;
-  left: 0.5%;
+  left: 20%;
+  font-family: "Roboto", sans-serif;
   position: relative;
 }
 
-.main-tabs__clock-title {
+.mini-title {
   color: rgb(255, 255, 255);
   position: absolute;
-  top: -22.5%;
-  left: 2%;
+  top: -1.7vh;
+  left: 0.75vw;
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
-}
-
-.main-tabs__todo-title {
-  color: rgb(255, 255, 255);
-  position: absolute;
-  top: -2.5%;
-  left: 2%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-}
-.main-tabs__fortune-title {
-  color: rgb(255, 255, 255);
-  position: absolute;
-  top: -5.5%;
-  left: 1.5%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
-}
-.main-tabs__weather-title {
-  color: rgb(255, 255, 255);
-  position: absolute;
-  top: -10%;
-  left: 2%;
-  font-family: "Roboto", sans-serif;
+  font-size: 0.7vw;
   font-weight: 600;
 }
 
@@ -100,16 +77,12 @@
   position: relative;
 }
 
-.main-tabs__clock {
-  font-family: "Roboto", sans-serif;
-  position: relative;
-}
-
 .main-tabs__clock-time {
   position: absolute;
   top: 5%;
   left: 1%;
   font-size: 5vh;
+  font-weight: 600;
 }
 
 .main-tabs__clock-day {
@@ -121,7 +94,7 @@
 
 .main-tabs__weather-weather {
   position: absolute;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   top: 30%;
   left: 10%;
   font-size: 6vh;

@@ -3,5 +3,5 @@
 <details>
 <summary>Nomad Coders Challenges</summary>
 
-- [VanillaJS_Project](Vanillajs/html/login.html)
+- [VanillaJS_Project](https://jxolus.github.io/VanillaJS/html/login.html)
 </details>
