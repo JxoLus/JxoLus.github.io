@@ -9,6 +9,7 @@ const github = document.querySelector(".footer-ui__github");
 const time = document.querySelector(".footer-ui__time");
 const google = document.querySelector(".footer-ui__google");
 const instagram = document.querySelector(".footer-ui__instagram");
+const userInfo = document.querySelector(".footer-ui__user-info");
 
 const allClose = document.querySelector(".footer-ui__all-close");
 
@@ -17,8 +18,10 @@ const clockTab = document.querySelector(".main-tabs__clock");
 const todoTab = document.querySelector(".main-tabs__todo");
 const fortuneTab = document.querySelector(".main-tabs__fortune");
 const weatherTab = document.querySelector(".main-tabs__weather");
+const userInfoTab = document.querySelector(".main-tabs__user-info");
 
 let windowsIsOpened = false;
+let userInfoIsOpened = true;
 let clockIsOpened = false;
 let todoIsOpened = false;
 let fortuneIsOpened = false;
@@ -34,6 +37,16 @@ function showTab(who) {
     } else if (windowsIsOpened == true) {
       windowsIsOpened = false;
       windowsTab.classList.add("hidden");
+    }
+  }
+
+  if (who == "userInfo") {
+    if (userInfoIsOpened == false) {
+      userInfoIsOpened = true;
+      userInfoTab.classList.remove("hidden");
+    } else if (userInfoIsOpened == true) {
+      userInfoIsOpened = false;
+      userInfoTab.classList.add("hidden");
     }
   }
 
@@ -83,12 +96,14 @@ function allTabClose() {
     clockIsOpened == false &&
     todoIsOpened == false &&
     fortuneIsOpened == false &&
-    weatherIsOpened == false
+    weatherIsOpened == false &&
+    userInfoIsOpened == false
   ) {
     clockIsOpened = true;
     todoIsOpened = true;
     fortuneIsOpened = true;
     weatherIsOpened = true;
+    userInfoIsOpened == true;
     if (windowsIsOpened == true) {
       windowsIsOpened = false;
       windowsTab.classList.add("hidden");
@@ -97,6 +112,7 @@ function allTabClose() {
     todoTab.classList.remove("hidden");
     fortuneTab.classList.remove("hidden");
     weatherTab.classList.remove("hidden");
+    userInfoTab.classList.remove("hidden");
   } else {
     if (windowsIsOpened == true) {
       windowsIsOpened = false;
@@ -118,6 +134,10 @@ function allTabClose() {
       weatherIsOpened = false;
       weatherTab.classList.add("hidden");
     }
+    if (userInfoIsOpened == true) {
+      userInfoIsOpened = false;
+      userInfoTab.classList.add("hidden");
+    }
   }
 }
 
@@ -132,5 +152,6 @@ github.addEventListener("click", () => window.open("https://github.com"));
 time.addEventListener("click", () => showTab("clock"));
 google.addEventListener("click", () => window.open("https://google.com"));
 instagram.addEventListener("click", () => window.open("https://instagram.com"));
+userInfo.addEventListener("click", () => showTab("userInfo"));
 
 allClose.addEventListener("click", allTabClose);
