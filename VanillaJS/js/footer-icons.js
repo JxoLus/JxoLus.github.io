@@ -4,7 +4,11 @@ const todo = document.querySelector(".footer-ui__todo");
 const fortune = document.querySelector(".footer-ui__fortune");
 const weather = document.querySelector(".footer-ui__weather");
 const youtube = document.querySelector(".footer-ui__youtube");
+const facebook = document.querySelector(".footer-ui__facebook");
+const github = document.querySelector(".footer-ui__github");
 const time = document.querySelector(".footer-ui__time");
+const google = document.querySelector(".footer-ui__google");
+const instagram = document.querySelector(".footer-ui__instagram");
 
 const allClose = document.querySelector(".footer-ui__all-close");
 
@@ -128,10 +132,11 @@ clock.addEventListener("click", () => showTab("clock"));
 todo.addEventListener("click", () => showTab("todo"));
 fortune.addEventListener("click", () => showTab("fortune"));
 weather.addEventListener("click", () => showTab("weather"));
-youtube.addEventListener(
-  "click",
-  () => (location.href = "https://youtube.com")
-);
+youtube.addEventListener("click", () => window.open("https://youtube.com"));
+facebook.addEventListener("click", () => window.open("https://facebook.com"));
+github.addEventListener("click", () => window.open("https://github.com"));
 time.addEventListener("click", () => showTab("clock"));
+google.addEventListener("click", () => window.open("https://google.com"));
+instagram.addEventListener("click", () => window.open("https://instagram.com"));
 
 allClose.addEventListener("click", allTabClose);

@@ -8,11 +8,11 @@
 }
 
 .main-tabs div:not(.main-tabs__windows) {
-  border-radius: 10px;
-  border-top: 20px solid rgba(0, 0, 0, 0.7);
-  border-right: 0.5px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
-  border-left: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  border-top: 20px solid rgba(0, 0, 0, 0.8);
+  border-right: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+  border-left: 0.5px solid black;
 }
 
 .main-tabs__windows {

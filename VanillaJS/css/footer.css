@@ -1,6 +1,6 @@
 .footer-ui {
   width: 100%;
-  background-color: #f0ecec;
+  background-color: rgba(255, 255, 255, 0.6);
   position: fixed;
   bottom: 0;
   height: 40px;
@@ -10,7 +10,6 @@
 }
 
 .footer-ui__icons > span {
-  background-color: #f0ecec;
   padding: 7px 10px 5.5px 10px;
   margin: 1px 5px 1px 5px;
 }
@@ -27,7 +26,7 @@
 
 .footer-ui__time p {
   position: absolute;
-  right: 20px;
+  right: 1%;
   bottom: -9px;
   margin: 0px 15px 15px 0px;
   font-size: 13px;
@@ -37,9 +36,9 @@
 .footer-ui__all-close {
   position: absolute;
   right: 0;
-  bottom: 0px;
-  width: 20px;
-  height: 40px;
+  bottom: 0;
+  width: 1%;
+  height: 100%;
   background-color: rgba(92, 92, 92, 0.1);
 }
 
