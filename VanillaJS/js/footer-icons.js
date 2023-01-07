@@ -27,8 +27,6 @@ let weatherIsOpened = false;
 function usedNow() {}
 
 function showTab(who) {
-  console.log(`${who} is clicked`);
-
   if (who == "windows") {
     if (windowsIsOpened == false) {
       windowsIsOpened = true;
@@ -78,10 +76,6 @@ function showTab(who) {
       weatherTab.classList.add("hidden");
     }
   }
-
-  console.log(
-    `windowsIsOpened: ${windowsIsOpened}\nclockIsOpened: ${clockIsOpened}\ntodoIsOpened: ${todoIsOpened}\nfortuneIsOpened: ${fortuneIsOpened}\nweatherIsOpened: ${weatherIsOpened}`
-  );
 }
 
 function allTabClose() {

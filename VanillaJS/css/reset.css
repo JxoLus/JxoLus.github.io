@@ -109,7 +109,7 @@ section {
 
 body {
   line-height: 1;
-  width: 100vh;
+  width: 10vh;
   height: 100vh;
   cursor: default;
   -webkit-user-select: none;
@@ -142,7 +142,7 @@ table {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 input {

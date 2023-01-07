@@ -16,14 +16,27 @@
 }
 
 .main-tabs__windows {
+  position: relative;
   bottom: 40px;
-  width: 15%;
-  height: 42%;
+  width: 10%;
+  height: 7%;
+}
+
+.fa-power-off {
+  left: 7%;
+  position: absolute;
+  bottom: 25%;
+}
+
+.fa-image {
+  left: 7%;
+  position: absolute;
+  bottom: 70%;
 }
 
 .main-tabs__clock {
   width: 40%;
-  height: 45%;
+  height: 10%;
   top: 2%;
   left: 0.5%;
 }
@@ -47,4 +60,23 @@
   height: 45%;
   top: 2%;
   left: 42%;
+}
+
+.main-tabs__clock {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.main-tabs__clock-time {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  font-size: 200%;
+}
+
+.main-tabs__clock-day {
+  position: absolute;
+  bottom: 10%;
+  left: 1.5%;
+  font-size: 75%;
 }
