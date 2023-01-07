@@ -1,11 +1,13 @@
 const usernameInput = document.querySelector("#username");
 const passwordInput = document.querySelector("#password");
 const pressAnyKey = document.querySelector(".press-any-key");
+let username = usernameInput.value;
+let password = passwordInput.value;
 let pakIsShowed = false;
 
 function getPassword() {
-  const username = usernameInput.value;
-  const password = passwordInput.value;
+  username = usernameInput.value;
+  password = passwordInput.value;
   if (pakIsShowed === false) {
     if (username.length >= 2 && password.length >=4) {
       pressAnyKey.classList.remove("hidden");
@@ -21,7 +23,9 @@ function getPassword() {
 
 function goToMainPage() {
   if (pakIsShowed === true) {
-    location.href = "main.html"
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+    location.href = "main.html";
   }
 }
 
