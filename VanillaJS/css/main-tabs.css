@@ -39,6 +39,7 @@
   height: 10%;
   top: 2%;
   left: 0.5%;
+  position: relative;
 }
 
 .main-tabs__clock-title {
@@ -50,11 +51,37 @@
   font-weight: 600;
 }
 
+.main-tabs__todo-title {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -2.5%;
+  left: 2%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.main-tabs__fortune-title {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -5.5%;
+  left: 1.5%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.main-tabs__weather-title {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -5%;
+  left: 2%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
 .main-tabs__todo {
   width: 25%;
   height: 90%;
   top: 2%;
   left: 74%;
+  position: relative;
 }
 
 .main-tabs__fortune {
@@ -62,6 +89,7 @@
   height: 40%;
   top: 52%;
   left: 17%;
+  position: relative;
 }
 
 .main-tabs__weather {
@@ -69,6 +97,7 @@
   height: 45%;
   top: 2%;
   left: 42%;
+  position: relative;
 }
 
 .main-tabs__clock {
