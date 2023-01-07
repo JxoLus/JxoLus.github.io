@@ -10,8 +10,10 @@ function onGeoSuccess(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
+      const city = document.querySelector(".main-tabs-weather-city");
+      const weather = document.querySelector(".main-tabs-weather-weather");
       city.innerText = data.name;
-      weather.innerText = data.weather[0].main
+      weather.innerText = data.weather[0].main;
     });
 }
 function onGeoError() {
