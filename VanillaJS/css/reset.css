@@ -63,3 +63,9 @@ table {
 .hidden {
   display: none;
 }
+
+input {
+	border: none;
+	outline: none;
+	background: none;
+}
