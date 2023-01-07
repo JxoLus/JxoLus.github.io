@@ -12,21 +12,27 @@ let uniIsShowed = true;
 function getPassword() {
   username = usernameInput.value;
   password = passwordInput.value;
-  if (pakIsShowed === false) {
-    if (username.length >= 2 && password.length >= 4) {
-      pressAnyKey.classList.remove("hidden");
-      pakIsShowed = true;
+  if (uniIsShowed === true) {
+    if (pakIsShowed === false) {
+      if (username.length >= 2 && password.length >= 4) {
+        pressAnyKey.classList.remove("hidden");
+        pakIsShowed = true;
+      }
+    } else if (pakIsShowed === true) {
+      if (username.length < 2 || password.length < 4) {
+        pressAnyKey.classList.add("hidden");
+        pakIsShowed = false;
+      }
     }
-  } else if (pakIsShowed === true) {
-    if (username.length < 2 || password.length < 4) {
-      pressAnyKey.classList.add("hidden");
-      pakIsShowed = false;
-    }
-  }
-  if (pwIsShowed === true) {
-    if (localStorage.getItem("password") === password) {
-      passwordWrong.classList.add("hidden");
-      pwIsShowed = false;
+  } else {
+    if (pwIsShowed === true) {
+      if (localStorage.getItem("password") === password) {
+        console.log("enter");
+        passwordWrong.classList.add("hidden");
+        pressAnyKey.classList.remove("hidden");
+        pakIsShowed = true;
+        pwIsShowed = false;
+      }
     }
   }
 }
@@ -52,7 +58,9 @@ function login() {
   if (localStorage.getItem("username") === null) {
     uniIsShowed = true;
   } else {
+    document.querySelector(".welcome-user").innerText = localStorage.getItem("username");
     usernameInput.classList.add("hidden");
+    document.querySelector(".welcome").style.animation = "welcomeAnimation-welcome 1s ease-in-out;";
     uniIsShowed = false;
   }
 }

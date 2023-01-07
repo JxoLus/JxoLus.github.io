@@ -29,4 +29,4 @@ function backgroundChange() {
   }
 }
 
-document.querySelector(".fa-image").addEventListener("click", backgroundChange);
+//document.querySelector(".fa-image").addEventListener("click", backgroundChange);
