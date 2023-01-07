@@ -12,13 +12,13 @@
     <main>
       <div class="main-login">
         <p class="welcome">Welcome</p>
-        <p class="welcome-user">master</p>
+        <p class="welcome-user hidden">master</p>
         <label for="username password">
           <input
             type="text"
             id="username"
             minlength="2"
-            maxlength="5"
+            maxlength="8"
             onkeyup="getPassword()"
             placeholder="사용자 이름"
             autofocus
@@ -34,10 +34,10 @@
             required
           />
         </label>
-        <p class="press-any-key hidden">아무 곳이나 눌러 시작</p>
+        <p class="press-any-key hidden">엔터키를 눌러 시작</p>
         <p class="password-wrong hidden">일치하지 않습니다</p>
       </div>
-    </main>  
+    </main>
     <script src="../js/background.js"></script>
     <script src="../js/login.js"></script>
   </body>

@@ -34,7 +34,6 @@ body {
   font-size: 10vh;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  animation-fill-mode: forwards;
 }
 
 .press-any-key {
@@ -52,24 +51,30 @@ body {
 
 .password-wrong {
   position: absolute;
-  top: 11vh;
-  left: 40px;
-  color: rgb(255, 0, 0);
-  font-size: 2vh;
+  top: 15vh;
+  left: 45px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 0.5vh;
+  animation: pressAnyKeyAnimation 1s ease infinite;
+  width: 100vw;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .welcome-user {
   position: absolute;
   bottom: 25vh;
-  left: 2vw;
+  left: 3vw;
   color: rgba(0, 0, 0, 0.7);
   font-size: 9vh;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   animation: welcomeAnimation-user 1s ease-in-out;
   animation-fill-mode: forwards;
+  width: 100vw;
+  writing-mode: horizontal-tb;
 }
-
 
 @keyframes pressAnyKeyAnimation {
   0% {
@@ -88,7 +93,7 @@ body {
     transform: translatex(-50%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
 }
 
@@ -99,6 +104,5 @@ body {
   }
   100% {
     color: rgba(0, 0, 0, 0.7);
-    
   }
 }
