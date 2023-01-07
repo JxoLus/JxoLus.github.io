@@ -70,7 +70,7 @@
 
 .main-tabs__todo {
   width: 25vw;
-  height: 90vh;
+  height: 88.5vh;
   top: 2vh;
   left: 74%;
   position: relative;
@@ -79,7 +79,7 @@
 .main-tabs__fortune {
   width: 55vw;
   height: 40vh;
-  top: 52vh;
+  top: 50vh;
   left: 17vw;
   position: relative;
 }
