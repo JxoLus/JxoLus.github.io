@@ -10,9 +10,10 @@ logOutBtn.addEventListener("click", () => (location.href = "login.html"));
 accountDeleteBtn.addEventListener("click", function () {
   localStorage.removeItem("username");
   localStorage.removeItem("password");
+  localStorage.removeItem("isSnowing");
   location.href = "login.html";
 });
 
 welcomeName.innerText = username;
 
-welcomeMessage.innerText = `반갑습니다 ${username} 님`;
+welcomeMessage.innerText = `반갑습니다 ${username}님`;

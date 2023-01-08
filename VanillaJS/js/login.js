@@ -77,6 +77,9 @@ login();
 
 document.body.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
+    if (localStorage.getItem("isSnowing") == null) {
+      localStorage.setItem("isSnowing", false);
+    }
     goToMainPage();
   }
 });

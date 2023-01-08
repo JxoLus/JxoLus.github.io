@@ -1,16 +1,3 @@
-const windows = document.querySelector(".footer-ui__windows");
-const clock = document.querySelector(".footer-ui__clock");
-const todo = document.querySelector(".footer-ui__todo");
-const fortune = document.querySelector(".footer-ui__fortune");
-const weather = document.querySelector(".footer-ui__weather");
-const youtube = document.querySelector(".footer-ui__youtube");
-const facebook = document.querySelector(".footer-ui__facebook");
-const github = document.querySelector(".footer-ui__github");
-const time = document.querySelector(".footer-ui__time");
-const google = document.querySelector(".footer-ui__google");
-const instagram = document.querySelector(".footer-ui__instagram");
-const userInfo = document.querySelector(".footer-ui__user-info");
-
 const allClose = document.querySelector(".footer-ui__all-close");
 
 const windowsTab = document.querySelector(".main-tabs__windows");
@@ -27,131 +14,118 @@ let todoIsOpened = false;
 let fortuneIsOpened = false;
 let weatherIsOpened = false;
 
-function usedNow() {}
-
 function showTab(who) {
-  if (who == "windows") {
-    if (windowsIsOpened == false) {
-      windowsIsOpened = true;
-      windowsTab.classList.remove("hidden");
-    } else if (windowsIsOpened == true) {
-      windowsIsOpened = false;
-      windowsTab.classList.add("hidden");
-    }
-  }
+  const footerUiWho = document.querySelector(`.footer-ui__${who}`);
+  const mainTabsWho = document.querySelector(`.main-tabs__${who}`);
 
-  if (who == "userInfo") {
-    if (userInfoIsOpened == false) {
-      userInfoIsOpened = true;
-      userInfoTab.classList.remove("hidden");
-    } else if (userInfoIsOpened == true) {
-      userInfoIsOpened = false;
-      userInfoTab.classList.add("hidden");
+  if (
+    mainTabsWho.classList.item(mainTabsWho.classList.length - 1) === "hidden"
+  ) {
+    if (who != "windows") {
+      footerUiWho.classList.add("usedNow");
     }
-  }
-
-  if (who == "clock") {
-    if (clockIsOpened == false) {
-      clockIsOpened = true;
-      clockTab.classList.remove("hidden");
-    } else if (clockIsOpened == true) {
-      clockIsOpened = false;
-      clockTab.classList.add("hidden");
+    mainTabsWho.classList.remove("hidden");
+  } else {
+    if (who != "windows") {
+      footerUiWho.classList.remove("usedNow");
     }
-  }
-
-  if (who == "todo") {
-    if (todoIsOpened == false) {
-      todoIsOpened = true;
-      todoTab.classList.remove("hidden");
-    } else if (todoIsOpened == true) {
-      todoIsOpened = false;
-      todoTab.classList.add("hidden");
-    }
-  }
-
-  if (who == "fortune") {
-    if (fortuneIsOpened == false) {
-      fortuneIsOpened = true;
-      fortuneTab.classList.remove("hidden");
-    } else if (fortuneIsOpened == true) {
-      fortuneIsOpened = false;
-      fortuneTab.classList.add("hidden");
-    }
-  }
-
-  if (who == "weather") {
-    if (weatherIsOpened == false) {
-      weatherIsOpened = true;
-      weatherTab.classList.remove("hidden");
-    } else if (weatherIsOpened == true) {
-      weatherIsOpened = false;
-      weatherTab.classList.add("hidden");
-    }
+    mainTabsWho.classList.add("hidden");
   }
 }
 
 function allTabClose() {
-  if (
-    clockIsOpened == false &&
-    todoIsOpened == false &&
-    fortuneIsOpened == false &&
-    weatherIsOpened == false &&
-    userInfoIsOpened == false
-  ) {
-    clockIsOpened = true;
-    todoIsOpened = true;
-    fortuneIsOpened = true;
-    weatherIsOpened = true;
-    userInfoIsOpened == true;
-    if (windowsIsOpened == true) {
-      windowsIsOpened = false;
-      windowsTab.classList.add("hidden");
-    }
-    clockTab.classList.remove("hidden");
-    todoTab.classList.remove("hidden");
-    fortuneTab.classList.remove("hidden");
-    weatherTab.classList.remove("hidden");
-    userInfoTab.classList.remove("hidden");
-  } else {
-    if (windowsIsOpened == true) {
-      windowsIsOpened = false;
-      windowsTab.classList.add("hidden");
-    }
-    if (clockIsOpened == true) {
-      clockIsOpened = false;
-      clockTab.classList.add("hidden");
-    }
-    if (todoIsOpened == true) {
-      todoIsOpened = false;
-      todoTab.classList.add("hidden");
-    }
-    if (fortuneIsOpened == true) {
-      fortuneIsOpened = false;
-      fortuneTab.classList.add("hidden");
-    }
-    if (weatherIsOpened == true) {
-      weatherIsOpened = false;
-      weatherTab.classList.add("hidden");
-    }
-    if (userInfoIsOpened == true) {
-      userInfoIsOpened = false;
-      userInfoTab.classList.add("hidden");
+  const allTabsName = ["user-info", "clock", "todo", "fortune", "weather"];
+
+  let isAllClosed = 0;
+
+  for (let i = 0; i < allTabsName.length; i++) {
+    let whoIsUsedNow = document.querySelector(`.footer-ui__${allTabsName[i]}`);
+    let whoIsOpened = document.querySelector(`.main-tabs__${allTabsName[i]}`);
+    if (
+      whoIsOpened.classList.item(whoIsOpened.classList.length - 1) === "hidden"
+    ) {
+      isAllClosed++;
     }
   }
+
+  console.log(isAllClosed);
+
+  if (isAllClosed === allTabsName.length) {
+    for (let i = 0; i < allTabsName.length; i++) {
+      let whoIsUsedNow = document.querySelector(
+        `.footer-ui__${allTabsName[i]}`
+      );
+      let whoIsOpened = document.querySelector(`.main-tabs__${allTabsName[i]}`);
+      whoIsUsedNow.classList.add("usedNow");
+      whoIsOpened.classList.remove("hidden");
+    }
+  } else {
+    for (let i = 0; i < allTabsName.length; i++) {
+      let whoIsUsedNow = document.querySelector(
+        `.footer-ui__${allTabsName[i]}`
+      );
+      let whoIsOpened = document.querySelector(`.main-tabs__${allTabsName[i]}`);
+      if (
+        whoIsOpened.classList.item(whoIsOpened.classList.length - 1) != "hidden"
+      ) {
+        whoIsOpened.classList.add("hidden");
+        whoIsUsedNow.classList.remove("usedNow");
+      }
+    }
+  }
+  document.querySelector(".main-tabs__windows").classList.add("hidden");
 }
 
-windows.addEventListener("click", () => showTab("windows"));
-clock.addEventListener("click", () => showTab("clock"));
-todo.addEventListener("click", () => showTab("todo"));
-fortune.addEventListener("click", () => showTab("fortune"));
-weather.addEventListener("click", () => showTab("weather"));
-youtube.addEventListener("click", () => window.open("https://youtube.com"));
-facebook.addEventListener("click", () => window.open("https://facebook.com"));
-github.addEventListener("click", () => window.open("https://github.com"));
-time.addEventListener("click", () => showTab("clock"));
-google.addEventListener("click", () => window.open("https://google.com"));
-instagram.addEventListener("click", () => window.open("https://instagram.com"));
-userInfo.addEventListener("click", () => showTab("userInfo"));
+/* showTab() */
+
+document
+  .querySelector(".footer-ui__windows")
+  .addEventListener("click", () => showTab("windows"));
+
+document
+  .querySelector(".footer-ui__user-info")
+  .addEventListener("click", () => showTab("user-info"));
+
+document
+  .querySelector(".footer-ui__clock")
+  .addEventListener("click", () => showTab("clock"));
+
+document
+  .querySelector(".footer-ui__todo")
+  .addEventListener("click", () => showTab("todo"));
+
+document
+  .querySelector(".footer-ui__fortune")
+  .addEventListener("click", () => showTab("fortune"));
+
+document
+  .querySelector(".footer-ui__weather")
+  .addEventListener("click", () => showTab("weather"));
+
+document
+  .querySelector(".footer-ui__time")
+  .addEventListener("click", () => showTab("clock"));
+
+/* herf */
+
+document
+  .querySelector(".footer-ui__youtube")
+  .addEventListener("click", () => window.open("https://youtube.com"));
+
+document
+  .querySelector(".footer-ui__facebook")
+  .addEventListener("click", () => window.open("https://facebook.com"));
+
+document
+  .querySelector(".footer-ui__github")
+  .addEventListener("click", () => window.open("https://github.com"));
+
+document
+  .querySelector(".footer-ui__google")
+  .addEventListener("click", () => window.open("https://google.com"));
+
+document
+  .querySelector(".footer-ui__instagram")
+  .addEventListener("click", () => window.open("https://instagram.com"));
 
 allClose.addEventListener("click", allTabClose);

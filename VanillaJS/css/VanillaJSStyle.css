@@ -5,7 +5,7 @@
 @import "main-tabs.css";
 @import "footer.css";
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&family=Rowdies&family=Ubuntu:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&family=Rowdies&family=Ubuntu:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&display=swap");
 
 /* font-family: 'Open Sans', sans-serif;
@@ -33,5 +33,23 @@ font-family: 'Ubuntu', sans-serif; */
   100% {
     background-color: rgba(0, 0, 0, 0);
     z-index: 0;
+  }
+}
+
+.snowflake {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+}
+
+@keyframes showflakesFall {
+  from {
+  }
+  to {
+    transform: translateY(95vh);
+    opacity: 0;
   }
 }

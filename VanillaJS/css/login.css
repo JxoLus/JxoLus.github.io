@@ -55,7 +55,7 @@ body {
   left: 45px;
   color: rgba(0, 0, 0, 0.8);
   font-size: 0.5vh;
-  animation: pressAnyKeyAnimation 1s ease infinite;
+  animation: passwordWrongAnimation 1s ease-in-out infinite;
   width: 100vw;
   text-align: center;
   left: 50%;
@@ -85,6 +85,18 @@ body {
   }
   100% {
     color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+@keyframes passwordWrongAnimation {
+  0% {
+    color: rgba(255, 0, 0, 0.8);
+  }
+  50% {
+    color: rgba(255, 0, 0, 0);
+  }
+  100% {
+    color: rgba(255, 0, 0, 0.8);
   }
 }
 

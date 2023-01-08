@@ -19,7 +19,7 @@
   position: relative;
   bottom: 5vh;
   width: 2vw;
-  height: 10vh;
+  height: 12.5vh;
 }
 
 .main-tabs__user-info {
@@ -47,6 +47,12 @@
   left: 0.5vw;
   position: absolute;
   bottom: 5vh;
+}
+
+.fa-snowflake {
+  left: 0.5vw;
+  position: absolute;
+  bottom: 11vh;
 }
 
 .main-tabs__clock {
@@ -126,7 +132,10 @@
 
 .main-tabs__user-info__name {
   position: absolute;
-  left: 6vw;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
   top: 20vh;
   font-size: 3vh;
   font-weight: 700;
@@ -135,7 +144,10 @@
 
 .main-tabs__user-info__message {
   position: absolute;
-  left: 5vw;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
   top: 25.5vh;
   font-size: 1.5vh;
   font-weight: 700;

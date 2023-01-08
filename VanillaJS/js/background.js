@@ -4,11 +4,11 @@ function backgroundChange() {
   const BODY = document.body;
 
   const random = Math.floor(Math.random() * 3);
-  
+
   if (currentBackground != 100 && random === currentBackground) {
     return backgroundChange();
   }
-  
+
   if (currentBackground === 0) {
     BODY.classList.remove("chosenOne");
   } else if (currentBackground === 1) {
@@ -29,4 +29,12 @@ function backgroundChange() {
   }
 }
 
-//document.querySelector(".fa-image").addEventListener("click", backgroundChange);
+if (
+  document.location.href.split("/")[
+    document.location.href.split("/").length - 1
+  ] === "main.html"
+) {
+  document
+    .querySelector(".fa-image")
+    .addEventListener("click", backgroundChange);
+}
