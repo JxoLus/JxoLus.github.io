@@ -50,7 +50,6 @@ function saveTodos() {
 todoForm.addEventListener("submit", handleTodoSubmit);
 
 if (localStorage.getItem("todos") !== "[]") {
-  console.log("not null");
   const parsedTodos = JSON.parse(localStorage.getItem("todos"));
   todos = parsedTodos;
   parsedTodos.forEach(paintTodo);
