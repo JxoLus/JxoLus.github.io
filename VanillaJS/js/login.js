@@ -80,6 +80,9 @@ document.body.addEventListener("keypress", function (e) {
     if (localStorage.getItem("isSnowing") == null) {
       localStorage.setItem("isSnowing", false);
     }
+    if (localStorage.getItem("todos") == null) {
+      localStorage.setItem("todos", "[]");
+    }
     goToMainPage();
   }
 });

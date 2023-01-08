@@ -30,6 +30,15 @@
         </div>
         <div class="main-tabs__todo todo-tab-background hidden">
           <p class="main-tabs__todo-title mini-title">할 일</p>
+          <form class="main-tabs__todo-form">
+            <input
+              type="text"
+              placeholder="할 일을 적어주세요 (최대 25자)"
+              maxlength="25"
+              required
+            />
+          </form>
+          <ul class="main-tabs__todo-list"></ul>
         </div>
         <div class="main-tabs__fortune hidden">
           <p class="main-tabs__fortune-title mini-title">운세</p>
@@ -48,7 +57,9 @@
         <div class="main-tabs__fun hidden">
           <p class="main-tabs__fun-title mini-title">재미</p>
           <iframe
-            src="https://www.youtube.com/embed/WtO3AHMBePY"
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/pWJNY_qwXAk?controls=0"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -122,5 +133,6 @@
     <script src="../js/weather.js"></script>
     <script src="../js/snowflake.js"></script>
     <script src="../js/music.js"></script>
+    <script src="../js/todo.js"></script>
   </body>
 </html>

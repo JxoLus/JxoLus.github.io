@@ -209,3 +209,32 @@ iframe {
   font-weight: 700;
   font-family: "Ubuntu", sans-serif;
 }
+
+.main-tabs__todo-form > input {
+  position: absolute;
+  bottom: 0.5vh;
+  left: 0.5vw;
+  width: 90%;
+  padding-top: 0.5vh;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-tabs__todo-form > input::placeholder {
+  color: rgba(0, 0, 0, 1);
+}
+
+.main-tabs__todo-list li span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin-left: 0.25vw;
+}
+
+.main-tabs__todo-list button {
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  width: 3vw;
+  height: 1.75vh;
+  font-size: 7px;
+  width: auto;
+}
