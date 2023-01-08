@@ -1,19 +1,3 @@
-const allClose = document.querySelector(".footer-ui__all-close");
-
-const windowsTab = document.querySelector(".main-tabs__windows");
-const clockTab = document.querySelector(".main-tabs__clock");
-const todoTab = document.querySelector(".main-tabs__todo");
-const fortuneTab = document.querySelector(".main-tabs__fortune");
-const weatherTab = document.querySelector(".main-tabs__weather");
-const userInfoTab = document.querySelector(".main-tabs__user-info");
-
-let windowsIsOpened = false;
-let userInfoIsOpened = true;
-let clockIsOpened = false;
-let todoIsOpened = false;
-let fortuneIsOpened = false;
-let weatherIsOpened = false;
-
 function showTab(who) {
   const footerUiWho = document.querySelector(`.footer-ui__${who}`);
   const mainTabsWho = document.querySelector(`.main-tabs__${who}`);
@@ -34,7 +18,16 @@ function showTab(who) {
 }
 
 function allTabClose() {
-  const allTabsName = ["user-info", "clock", "todo", "fortune", "weather"];
+  const allTabsName = [
+    "user-info",
+    "clock",
+    "todo",
+    "fortune",
+    "weather",
+    "game",
+    "music",
+    "fun",
+  ];
 
   let isAllClosed = 0;
 
@@ -106,6 +99,18 @@ document
   .querySelector(".footer-ui__time")
   .addEventListener("click", () => showTab("clock"));
 
+document
+  .querySelector(".footer-ui__game")
+  .addEventListener("click", () => showTab("game"));
+
+document
+  .querySelector(".footer-ui__music")
+  .addEventListener("click", () => showTab("music"));
+
+document
+  .querySelector(".footer-ui__fun")
+  .addEventListener("click", () => showTab("fun"));
+
 /* herf */
 
 document
@@ -128,4 +133,8 @@ document
   .querySelector(".footer-ui__instagram")
   .addEventListener("click", () => window.open("https://instagram.com"));
 
-allClose.addEventListener("click", allTabClose);
+/* all close */
+
+document
+  .querySelector(".footer-ui__all-close")
+  .addEventListener("click", allTabClose);

@@ -17,7 +17,7 @@
           <i class="fa-solid fa-image fa-sm" title="배경화면 변경"> </i>
           <i class="fa-solid fa-snowflake fa-sm" title="눈 효과"></i>
         </div>
-        <div class="main-tabs__user-info">
+        <div class="main-tabs__user-info user-info-background">
           <p class="main-tabs__user-info-title mini-title">유저</p>
           <img src="../img/user-icon.png" id="user-icon" />
           <p class="main-tabs__user-info__name">master</p>
@@ -37,6 +37,23 @@
         <div class="main-tabs__weather weather-tab-background hidden">
           <p class="main-tabs__weather-title mini-title">날씨</p>
           <p class="main-tabs__weather-weather">00시 / 00°C</p>
+        </div>
+        <div class="main-tabs__game">
+          <p class="main-tabs__game-title mini-title">게임</p>
+        </div>
+        <div class="main-tabs__music hidden">
+          <p class="main-tabs__music-title mini-title">음악</p>
+          <p class="main-tabs__music-name">Disfigure - Blank</p>
+        </div>
+        <div class="main-tabs__fun hidden">
+          <p class="main-tabs__fun-title mini-title">재미</p>
+          <iframe
+            src="https://www.youtube.com/embed/WtO3AHMBePY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </main>
@@ -79,6 +96,12 @@
           <span class="footer-ui__game">
             <i class="fa-solid fa-gamepad fa-lg"></i>
           </span>
+          <span class="footer-ui__music">
+            <i class="fa-solid fa-music fa-lg"></i>
+          </span>
+          <span class="footer-ui__fun">
+            <i class="fa-solid fa-face-grin-squint fa-lg"></i>
+          </span>
         </div>
         <div class="footer-ui__time">
           <p id="nowTime">오전 0:00</p>
@@ -98,5 +121,6 @@
     <script src="../js/main-tabs.js"></script>
     <script src="../js/weather.js"></script>
     <script src="../js/snowflake.js"></script>
+    <script src="../js/music.js"></script>
   </body>
 </html>

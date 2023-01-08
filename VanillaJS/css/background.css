@@ -34,6 +34,18 @@
   animation: gradient 60s ease infinite;
 }
 
+.music-tab-background {
+  background: linear-gradient(to right, #3494e6, #ec6ead);
+  background-size: 300% 300%;
+  animation: gradient 5s ease infinite;
+}
+
+.user-info-background {
+  background: linear-gradient(to right, #dbe6f6, #ffb0a4);
+  background-size: 300% 300%;
+  animation: gradient 30s ease infinite;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
