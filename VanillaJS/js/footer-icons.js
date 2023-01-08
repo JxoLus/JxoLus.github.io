@@ -22,9 +22,9 @@ function allTabClose() {
     "user-info",
     "clock",
     "todo",
-    "fortune",
+    /* "fortune", */
     "weather",
-    "game",
+    /* "game", */
     "music",
     "fun",
   ];
@@ -87,9 +87,9 @@ document
   .querySelector(".footer-ui__todo")
   .addEventListener("click", () => showTab("todo"));
 
-document
+/* document
   .querySelector(".footer-ui__fortune")
-  .addEventListener("click", () => showTab("fortune"));
+  .addEventListener("click", () => showTab("fortune")); */
 
 document
   .querySelector(".footer-ui__weather")
@@ -99,9 +99,9 @@ document
   .querySelector(".footer-ui__time")
   .addEventListener("click", () => showTab("clock"));
 
-document
+/* document
   .querySelector(".footer-ui__game")
-  .addEventListener("click", () => showTab("game"));
+  .addEventListener("click", () => showTab("game")); */
 
 document
   .querySelector(".footer-ui__music")
